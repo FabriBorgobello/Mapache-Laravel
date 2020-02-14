@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//Crea todas las rutas referidas a PRODUCTOS (Create, Edit, Delete, etc.)
+Route::resource('productos', 'ProductosController');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+?>
