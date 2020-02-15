@@ -1,0 +1,313 @@
+/*HEADER*/
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Righteous&display=swap');
+
+.sinMargen{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.nombre a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#titulodepagina{
+  display: inline;
+  font-family: 'Righteous', cursive;
+  font-size: 45px;
+  margin-left: 5px;
+}
+
+#barraNav{
+  background-color: #07BA3D;
+  font-family: 'Righteous', cursive;
+  font-size: 20px;
+}
+
+#buscador{
+  background-color: #50514F;
+  overflow: hidden;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+#botBuscar{
+  background-color: white;
+  width: 30%;
+  margin-left: 10px;
+}
+#botBuscar:hover{
+  color: #893ba0;
+}
+
+#inputBuscador{
+  width: 60%;
+}
+
+.dropdown-menu a:hover {
+    background-color: #50514F;
+    color: #FFF;
+    background-image: none;
+}
+
+.buscar{
+  float: left;
+  padding-left: 0px;
+}
+
+.buscar .form-inline{
+  padding-top: 35px;
+}
+
+.nombre{
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  float: left;
+  margin-top: 25px;
+}
+
+#logodepagina{
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.carrito i{
+  color: #07BA3D;
+  font-size: 40px;
+  width: 100%;
+  padding-top: 20%;
+  float: left;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+#misCompras{
+  font-family: 'Righteous', cursive;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px
+}
+
+.largoBarra{
+  width: 100%;
+}
+
+.navbar-toggler{
+  background-color: white;
+}
+
+/* CARRUSEL */
+#carrusel{
+  width: 100%;
+}
+
+/*footer*/
+
+.pieDePagina{
+  background-color: #50514F;
+  margin-right: 0px;
+  margin-left: 0px;
+  font-family: 'Righteous', cursive;
+}
+
+#linksAyuda{
+
+  padding-top: 15px;
+  font-size: 1em;
+}
+
+.iconoRedes{
+  color: #07BA3D;
+  font-size: 2em;
+}
+
+#redes :hover{
+  color: #07BA3D;
+}
+#pagos{
+  font-size: 1em;
+
+}
+/* VISTA DE PRODUCTO */
+.foto-producto-vista img{
+  width: 100%;
+  padding: 30px;
+}
+
+.precio-producto-vista{
+  border-left: 2px solid rgb(155, 158, 152, 0.5);
+  padding: 50px;
+}
+.precio-producto-vista button{
+  background-color: #893ba0;
+  color: #ffffff;
+  border-radius: 35px;
+  padding: 10px;
+  font-weight: 400;
+}
+.precio-producto-vista p{}
+
+.precio-producto-vista #Nombre-del-producto{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 25px;
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+}
+.precio-producto-vista #precio{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+  border-left: 2px solid rgba(#00ff21, 0.5);
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+}
+
+.precio-producto-vista .botones{
+  text-align: center;
+
+}
+
+/*PERFIL*/
+
+.fotoUsuario{
+  float: left;
+  text-align: center;
+  padding-top: 15px;
+}
+.fotoUsuario i{
+  color: #893ba0;
+  font-size: 200px;
+}
+.formularioDatos{
+  float: left;
+}
+
+.colorVioleta{
+  background-color: #893ba0;
+  color: white;
+}
+
+/* CONTACTO*/
+
+.letra{ /*cambiar encontacto * body */
+  font-family: 'Righteous', cursive;
+}
+.dentro{
+  margin: 10vh 0 10vh 0;
+}
+.cuadro{
+  width: 100%;
+  border: solid 2px gray;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.btn-primary{
+  background-color: #893BA0;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover{
+  background-color: #893BA0;
+  color: black;
+}
+
+/*FAQ*/
+
+.letra{ /* cambiar por body*/
+  font-family: 'Righteous', cursive;
+}
+
+.titulo{
+  text-align: center;
+}
+
+.accordion{
+  width: 100%;
+}
+
+.accordion button{
+  color: #893BA0;
+}
+
+.accordion button:hover{
+  color: #672C78;
+}
+
+/*LOGIN*/
+
+.letra{
+  font-family: 'Righteous', cursive;
+}
+
+.todo{
+  margin: 10vh 0 10vh 0;
+}
+
+.todo h2{
+  text-align: center;
+}
+
+
+.cuadro input{
+  width: 100%;
+  margin: 22px 0 22px 0;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.boton input{
+  margin: 3vh 1vh 3vh 0;
+}
+
+.boton button{
+  background-color: #893BA0;
+  color: white;
+  width: 100%;
+}
+
+.cuenta{
+  margin: 3vh auto;
+  text-align: center;
+}
+
+.centrar{
+  margin: 0 auto;
+}
+
+/*REGISTRO*/
+
+.imagenPerfil{
+  margin-top: 5vh;
+}
+
+.imagenPerfil label{
+  color: #893BA0;
+}
+
+/*CARRITO*/
+
+.contenedorCarro{
+  overflow: hidden;
+}
+
+.cajasCarro{
+  float: left;
+}
+
+#productoCarro{
+  width: 200px;
+}
+
+.cajaTotal{
+  border-left: solid 2px gray;
+}
