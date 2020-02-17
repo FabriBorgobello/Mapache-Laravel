@@ -1,24 +1,9 @@
-<link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
-@include('header_y_footer')
-@yield('header')
-<link rel="stylesheet" href="{!! asset('css/style.css') !!}">
-
-<html lang="en">
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <title>Login - Mapache</title>
-</head>
-<body>
-
-  <div class="container-fluid">
-    <div class="container">
-      <div class="todo letra">
-
-
+@extends('layouts.app')
+@section('title')
+Contactanos
+@endsection
+@section('content')
+<div class="todo letra">
           <h2>Ingresá con tu email y contraseña</h2><br>
           <div class="centrar col-lg-6">
             <div class="cuadro">
@@ -71,17 +56,9 @@
                 </div>
               </div>
             </div>
-
-
-
-          </div>
+        </div>
             </form>
 
         </div>
-      </div>
-    </div>
-  </div>
-</body>
-</html>
 
-@yield('footer')
+@endsection

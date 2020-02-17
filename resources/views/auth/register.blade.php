@@ -1,16 +1,9 @@
-
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Registro - Mapache</title>
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
-    @include('header_y_footer')
-    @yield('header')
-    <link rel="stylesheet" href="{!! asset('css/style.css') !!}">
-  </head>
-  <body>
+@extends('layouts.app')
+@section('title')
+Contactanos
+@endsection
+@section('content')
+<div class="todo letra">
 
   <div class="container">
     <div class="todo letra">
@@ -79,3 +72,4 @@
 
   </body>
 </html>
+@endsection

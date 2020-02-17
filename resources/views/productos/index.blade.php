@@ -1,8 +1,11 @@
 @extends('layouts.app')
+@section('title')
+  ABM PRODUCTOS
+@endsection
 @section('content')
 
 <div class="container">
-
+  <div class="todo letra">
 
 <h1 class="text-center">Panel de control de productos</h1>
 
@@ -44,7 +47,7 @@
                         <span class="badge badge-pill badge-danger">Archivado</span>
                     @else
                         <span class="badge badge-pill badge-success">En Stock</span>
-                    @endif                    
+                    @endif
                 </td>
                 <!-- <td>{{$producto->marca}}</td>
                 <td>{{$producto->categoria}}</td> -->
@@ -74,6 +77,7 @@
     </table>
     <!-- Paginador -->
     {{ $productos->links() }}
+</div>
 </div>
 
 @endsection

@@ -6,7 +6,8 @@
     <div class="row" id="buscador">
       <div class="nombre text-white col-sm-12 col-md-5 col-lg-5 ">
         <a href="index.php">
-        <img id="logodepagina" src="../public/img/Logo-Mapache.png" alt="logo">
+        <img id="logodepagina" src="{{asset('img/Logo-Mapache.png')}}" alt="logo">
+
         <h1 id= "titulodepagina">Mapache</h1></a>
       </div>
 
@@ -129,12 +130,12 @@
     </li>
     <li class= "nav-item text-center text-white col-sm-3 col-md-3 col-lg-3">
       Medios de pago
-      <p><img class="logoPago2" src="../public/img/mercado-pago.png">
-         <img class="logoPago2" src="../public/img/todo-pago.png">
-         <img class="logoPago2" src="../public/img/pagofacil.svg"></p>
-      <p><img class="logoPago2" src="../public/img/visa.svg">
-        <img class="logoPago2" src="../public/img/mastercard.svg">
-        <img class="logoPago2" src="../public/img/naranja.svg">
+      <p><img class="logoPago2" src="{{asset('img/mercado-pago.png')}}">
+         <img class="logoPago2" src="{{asset('img/todo-pago')}}">
+         <img class="logoPago2" src="{{asset('img/pagofacil.svg')}}"> </p>
+      <p><img class="logoPago2" src="{{asset('img/visa.svg')}}">
+        <img class="logoPago2" src="{{asset('img/mastercard.svg')}}">
+        <img class="logoPago2" src="{{asset('img/naranja.svg')}}">
     </li>
   </ul>
 
