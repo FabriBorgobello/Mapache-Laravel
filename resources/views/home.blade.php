@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    ¡Ingresaste a Mapache!
+                    You are logged in!
                 </div>
             </div>
         </div>
