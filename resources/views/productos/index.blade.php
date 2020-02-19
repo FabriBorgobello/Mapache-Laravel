@@ -12,8 +12,9 @@
     {{  Session::get('Mensaje') }}
     </div>
 @endif
-
+@can('productos.create')
 <a href="{{ url('productos/create')}}" class="btn btn-success">Agregar Producto</a>
+@endcan
 <br>
 <br>
     <table class="table table-light table-hover">
@@ -44,14 +45,15 @@
                         <span class="badge badge-pill badge-danger">Archivado</span>
                     @else
                         <span class="badge badge-pill badge-success">En Stock</span>
-                    @endif                    
+                    @endif
                 </td>
                 <!-- <td>{{$producto->marca}}</td>
                 <td>{{$producto->categoria}}</td> -->
                 <td>
                 <!-- Botón editar -->
-                <a class="btn btn-warning" href="{{url('/productos/'.$producto->id.'/edit')}}">Editar</a>
-
+                @can('productos.edit')
+                <a class="btn btn-warning" href="{{route('productos.edit', $producto->id)}}">Editar</a>
+                @endcan
                 <!-- Botón eliminar -->
                 @if ($producto->borrado)
                     <form method="post" action="{{url('/productos/'.$producto->id)}}" style="display:inline">
@@ -63,7 +65,9 @@
                     <form method="post" action="{{url('/productos/'.$producto->id)}}" style="display:inline">
                         {{ csrf_field() }}
                         {{ method_field('DELETE') }}
+                        @can('productos.destroy')
                         <button type="submit" class="btn btn-danger" onclick="return confirm('¿Desea archivar este producto?');">Archivar</button>
+                        @endcan
                     </form>
                 @endif
 

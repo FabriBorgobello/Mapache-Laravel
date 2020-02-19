@@ -8,6 +8,20 @@ use Illuminate\Support\Facades\Storage;
 
 class ProductosController extends Controller
 {
+
+  public function __construct()
+  {
+    //Productos middlewares
+    $this->middleware('can:productos.create')->only('create', 'store');
+
+    $this->middleware('can:productos.index')->only('index');
+
+    $this->middleware('can:productos.edit')->only('edit', 'update');
+
+    $this->middleware('can:productos.show')->only('show');
+
+    $this->middleware('can:productos.destroy')->only('destroy');
+  }
     /**
      * Display a listing of the resource.
      *
@@ -42,7 +56,7 @@ class ProductosController extends Controller
 
     //Almacena un nuevo producto en la base de datos.
     public function store(Request $request)
-    {   
+    {
         //Validación
         $validacion= [
             'Nombre'=>'required|string|max:200',
@@ -121,7 +135,7 @@ class ProductosController extends Controller
 
         //Encontrar producto por id.
         Productos::where('id', '=', $id)->update($datosProducto);
-        
+
         //Si queremos mostrar formulario con nuevos datos.
         // $producto = Productos::findOrFail($id);
         // return view('productos.edit',compact('producto'));
@@ -148,7 +162,7 @@ class ProductosController extends Controller
             $producto->borrado = 1;
             $notificacion = 'Producto archivado exitosamente';
         }
-        
+
         $producto->save();
 
         return redirect('productos')->with('Mensaje',$notificacion);

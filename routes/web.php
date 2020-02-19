@@ -15,11 +15,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//Crea todas las rutas referidas a PRODUCTOS (Create, Edit, Delete, etc.)
-Route::resource('productos', 'ProductosController');
-
 Auth::routes();
 
+
 Route::get('/home', 'HomeController@index')->name('home');
+
+//Crea todas las rutas referidas a PRODUCTOS (Create, Edit, Delete, etc.)
+Route::middleware(['auth'])->group(function(){
+  //Roles
+  Route::resource('roles', 'RoleController');
+  //Productos
+  Route::resource('productos', 'ProductosController');
+  //Usuarios
+  Route::resource('users', 'UserController');
+
+});
 
 ?>
