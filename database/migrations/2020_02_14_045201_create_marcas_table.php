@@ -14,10 +14,27 @@ class CreateMarcasTable extends Migration
     public function up()
     {
         Schema::create('marcas', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->string('nombre');
             $table->timestamps();
         });
+
+        DB::table('marcas')->insert([
+            ['nombre' => ''],
+            ['nombre' => 'Acer'],
+            ['nombre' => 'HP'],
+            ['nombre' => 'LG'],
+            ['nombre' => 'Asus'],
+            ['nombre' => 'Apple'],
+            ['nombre' => 'Logitech'],
+            ['nombre' => 'Intel'],
+            ['nombre' => 'AMD'],
+            ['nombre' => 'Motorola'],
+            ['nombre' => 'Samsung'],
+            ['nombre' => 'Xiaomi'],
+            ['nombre' => 'Alcatel'],
+            ['nombre' => 'Huawei']
+        ]);
     }
 
     /**

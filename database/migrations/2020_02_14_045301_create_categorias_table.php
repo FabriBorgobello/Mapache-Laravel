@@ -14,10 +14,25 @@ class CreateCategoriasTable extends Migration
     public function up()
     {
         Schema::create('categorias', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->string('nombre');
             $table->timestamps();
         });
+
+        DB::table('categorias')->insert([
+            ['nombre' => ''],
+            ['nombre' => 'Notebooks'],
+            ['nombre' => 'PC de escritorio'],
+            ['nombre' => 'Procesadores'],
+            ['nombre' => 'Teclados'],
+            ['nombre' => 'Monitores'],
+            ['nombre' => 'Mouse'],
+            ['nombre' => 'CPU'],
+            ['nombre' => 'Placas de Video'],
+            ['nombre' => 'Impresoras'],
+            ['nombre' => 'Toners'],
+            ['nombre' => 'Modems / Routers']
+        ]);
     }
 
     /**
