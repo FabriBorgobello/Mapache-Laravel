@@ -2,11 +2,11 @@
 @section('content')
 <div class="container">
 
-<form action="{{url('/roles')}}" class="form-horizontal" method="POST">
-{{ csrf_field() }}
+    <form action="{{url('/roles')}}" class="form-horizontal" method="POST">
+        {{ csrf_field() }}
 
-@include('roles.partials.form', ['modo'=>'crear'])
+        @include('roles.partials.form', ['modo'=>'crear'])
 
-</form>
+    </form>
 </div>
 @endsection
