@@ -259,6 +259,57 @@ textarea {
   line-height: inherit;
 }
 
+/*css del login y registro*/
+
+.form-group {
+  position:relative;
+  margin: 3vh auto;
+}
+
+.form-label{
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  color: #999;
+  background-color: #fff;
+  z-index: 10;
+  transition: transform 150ms ease-out, font-size 150ms ease-out;
+}
+
+.focused .form-label {
+  transform: translateY(-125%);
+  font-size: .75em;
+}
+
+.form-input{
+  width: 100%;
+  position: relative;
+  padding: 5px 0px 5px 0;
+  outline: 0;
+  border: 0;
+  box-shadow: 0 1px 0 0 #e5e5e5;
+  transition: box-shadow 150ms ease-out;
+
+}
+
+.focused .form-input{
+  box-shadow: 0 2px 0 0 #893ba0;
+}
+
+.form-input.filled {
+  box-shadow: 0 2px 0 0 lightgreen;
+}
+
+.btn-primary{
+    background-color: #893ba0 !important;
+    border:none !important;
+}
+
+.btn-primary:hover{
+  background-color: #A041BB  !important;
+}
+
+/*fin de inputs */
 button,
 input {
   overflow: visible;
@@ -10883,4 +10934,3 @@ a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
-
