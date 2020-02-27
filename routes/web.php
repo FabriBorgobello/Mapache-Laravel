@@ -37,6 +37,12 @@ Route:: get('/contacto', function(){
 Route:: get('/faqs', function(){
   return view('faqs');
 });
+Route:: get('/', 'catalogoController@index');
+
+Route:: get('/producto/{id}', [
+    'as'=>'producto-detalle',
+    'uses'=>'catalogoController@show']);
+
 
 
 ?>
