@@ -30,11 +30,13 @@ Route::middleware(['auth'])->group(function(){
   Route::resource('users', 'UserController');
 
 });
+
 Route:: get('/contacto', function(){
   return view('contacto');
 });
 Route:: get('/faqs', function(){
   return view('faqs');
 });
+
 
 ?>

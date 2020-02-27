@@ -483,6 +483,7 @@
         },
         {
             "name": "laravel/framework",
+
             "version": "v6.17.1",
             "source": {
                 "type": "git",
@@ -625,7 +626,9 @@
                 "framework",
                 "laravel"
             ],
+
             "time": "2020-02-26T14:23:01+00:00"
+
         },
         {
             "name": "laravel/tinker",
