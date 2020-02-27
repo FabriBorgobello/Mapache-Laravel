@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.appuss')
 @section('title')
 Contactanos
 @endsection

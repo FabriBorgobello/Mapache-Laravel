@@ -20,17 +20,12 @@ class CreateProductosTable extends Migration
             $table->float('precio')->unsigned();
             $table->string('foto');
             $table->boolean('borrado')->default(0);
-            
-            // $table->integer('id_categoria')->unsigned();
-            // $table->foreign('id_categoria')
-            //     ->references('id')
-            //     ->on('categorias');
 
-            // $table->integer('id_marca')->unsigned();
-            // $table->foreign('id_marca')
-            //     ->references('id')
-            //     ->on('marcas');
-            
+            $table->unsignedBigInteger('id_marca');
+            $table->foreign('id_marca')->references('id')->on('marcas');
+            $table->unsignedBigInteger('id_categoria');
+            $table->foreign('id_categoria')->references('id')->on('categorias');
+
             $table->timestamps();
         });
     }

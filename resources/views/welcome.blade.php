@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.appuss')
 @section('content')
 <div class="todo letra">
         <!-- CARRUSEL DE OFERTAS -->
