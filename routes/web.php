@@ -31,4 +31,12 @@ Route::middleware(['auth'])->group(function(){
 
 });
 
+Route:: get('/contacto', function(){
+  return view('contacto');
+});
+Route:: get('/faqs', function(){
+  return view('faqs');
+});
+
+
 ?>

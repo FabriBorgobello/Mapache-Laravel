@@ -1,5 +1,4 @@
-
-@extends('layouts.appuss')
+@extends('layouts.app')
 @section('content')
 <div class="todo letra">
         <!-- CARRUSEL DE OFERTAS -->
@@ -33,9 +32,8 @@
   </a>
 </div>
 <div class="container">
-
+  
 </div>
 </div>
 
 @endsection
-
