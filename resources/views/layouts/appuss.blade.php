@@ -148,7 +148,7 @@
       <li class= "nav-item text-center text-white col-sm-3 col-md-3 col-lg-3">
         Medios de pago
         <p><img class="logoPago2" src="{{asset('img/mercado-pago.png')}}">
-           <img class="logoPago2" src="{{asset('img/todo-pago')}}">
+           <img class="logoPago2" src="{{asset('img/todo-pago.png')}}">
            <img class="logoPago2" src="{{asset('img/pagofacil.svg')}}"> </p>
         <p><img class="logoPago2" src="{{asset('img/visa.svg')}}">
           <img class="logoPago2" src="{{asset('img/mastercard.svg')}}">
