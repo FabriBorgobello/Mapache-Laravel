@@ -1,7 +1,7 @@
 
 @extends('layouts.appuss')
 @section('content')
-<div class="todo letra">
+<div class="">
         <!-- CARRUSEL DE OFERTAS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -32,10 +32,27 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+</div>
+<!-- PRODUCTOS -->
+<!--
 <div class="container">
+  <div class="todo letra">
+    <div class="card-deck">
+      <div class="card" style="width: 18rem;">
+        @foreach ($productos as $producto)
+        <img src="{{$producto->foto}}" class="card-img-top" alt="{{$producto->nombre}}">
+        <div class="card-body">
+          <h5 class="card-title">{{$producto->nombre}}</h5>
+          <p class="card-text">{{$producto->descripcion}}</p>
+          <a href="{{route('producto-detalle',$producto->id)}}"><button type="button" class="btn colorVioleta">VER MÁS</button></a>
+            </div>
+          @endforeach
+      </div>
+  </div>
+
+  </div>
 
 </div>
-</div>
 
+-->
 @endsection
-
