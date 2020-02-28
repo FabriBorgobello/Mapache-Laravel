@@ -39,4 +39,8 @@ Route:: get('/faqs', function(){
 });
 
 
+// Carrito
+
+Route::
+
 ?>
