@@ -11,7 +11,7 @@
     <p id="precio">Precio:	US$ {{$productos->precio}} </p>
     <br>
     <div class="botones">
-      <a href="{{route('producto-detalle',$productos->id)}}"><button type="button" class="btn colorVioleta">Agregar al carrito</button></a>
+      <a href="{{route('carro-add',$productos->id)}}"><button type="button" class="btn colorVioleta">Agregar al carrito</button></a>
 
     </div>
 

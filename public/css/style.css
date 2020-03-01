@@ -296,6 +296,12 @@
 
 /*CARRITO*/
 
+.table-cart{
+  padding: 1em;
+}
+.table-cart img{
+  width: 50px;
+}
 .contenedorCarro{
   overflow: hidden;
 }

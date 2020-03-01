@@ -3,6 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use app\Providers;
+
+
+use App\Producto;
+use App\Categoria;
+use App\Marca;
+use Illuminate\Support\Facades\Storage;
+
 
 class CarroController extends Controller
 {
@@ -13,35 +21,55 @@ class CarroController extends Controller
     //mostrar CarroController
     public function show()
     {
-      // se mantiene actualizada
-      return \Session::get('carro');
+      // muestra la variable de session yse mantiene actualizada
+      $carro= \Session::get('carro');
+      $total=$this->total();
+      return view('carro',compact('carro','total'));
     }
     //agregar item
-    public function add($value='')
+    public function add(Producto $producto)
     {
-      // code...
+      $carro= \Session::get('carro');
+      $producto->cantidad=1;
+      $carro[$producto->id]=$producto;
+      \Session::put('carro',$carro); //actualizo la variable de session
+      return redirect()->route('carro-show');
     }
 
     //quitar item
-    public function FunctionName($value='')
+    public function delete(Producto $producto)
     {
-      // code...
+      $carro= \Session::get('carro');//aaray c todos los item
+      unset($carro[$producto->id]);//elimina el item id
+      \Session::put('carro',$carro);
+      return redirect()->route('carro-show');
     }
 
     //actualizar item
-    public function FunctionName($value='')
+    public function update(Producto $producto, $cantidad)
     {
-      // code...
+      $carro= \Session::get('carro');
+      $carro[$producto->id]->cantidad= $cantidad;
+      \Session::put('carro',$carro);
+      return redirect()->route('carro-show');
     }
 
     //vaciar carro
-    public function FunctionName($value='')
+    public function vaciar($value='')
     {
-      // code...
+       \Session::forget('carro');
+        return redirect()->route('carro-show');
     }
     //total a pagar
-    public function FunctionName($value='')
+    private function total()
     {
-      // code...
+        $carro= \Session::get('carro');
+        $total=0;
+        foreach ($carro as $item) {
+          $total+=$item->precio * $item->cantidad;
+        }
+
+      return $total;
     }
+
 }
