@@ -57,8 +57,10 @@
         <a href="{{route('carro-vaciar')}}" class="btn btn-warning">
           <i class="fa fa-trash"></i> Vaciar carrito
         </a>
-        <a href="{{route('home')}}" class="btn btn-primary"> Continuar <i class="fa fa-chevron-circle-right"></i>
+    <!--  boton para el detalle de la compra a realizar para finalizar
+       <a href="{{route('home')}}" class="btn btn-primary"> Continuar <i class="fa fa-chevron-circle-right"></i>
         </a>
+      -->
       </p>
     </div>
   @else
