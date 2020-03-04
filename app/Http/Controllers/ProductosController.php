@@ -61,7 +61,7 @@ class ProductosController extends Controller
         //Validación
         $validacion = [
             'Nombre' => 'required|string|max:200',
-            'Descripcion' => 'string|max:200',
+            'Descripcion' => 'string|max:1000',
             'Precio' => 'required',
             'Foto' => 'required|max:10000|mimes:jpeg,png,jpg,bmp'
         ];
