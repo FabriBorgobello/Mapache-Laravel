@@ -61,7 +61,8 @@
 
 
 <!-- PRODUCTOS -->
-<!--<div class="container">
+<!-- -->
+<div class="container">
   <div class="todo letra">
     <div class="card-deck">
       <div class="card" style="width: 18rem;">
@@ -79,6 +80,6 @@
   </div>
 
 </div>
--->
+
 
 @endsection
